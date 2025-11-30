@@ -17,20 +17,22 @@
     </h1>
     <p class="info">Enter your email and password to register.</p>
     <form>
-        <input type="text" name="username" placeholder="Username">
-        <input type="email" name="email" placeholder="Enter your email address">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="password" placeholder="Confirm Password">
-        <button type="submit" name="submit" class="register-btn">Register</button>
+        <label>
+            <input type="text" required pattern="[A-Za-z0-9]{3,16}" name="username" placeholder="Username">
+            <input type="email" required name="email" placeholder="Enter your email address">
+            <input type="password" name="password" required minlength="8" placeholder="Password">
+            <input type="password" name="password" placeholder="Confirm Password">
+            <button type="submit" name="submit" class="register-btn">Register</button>
+        </label>
     </form>
     <p class="line">
         <span>Or register with</span>
     </p>
-    <button class="google">
+    <button class="button">
         <img src="./logo/google%201.png" alt="google logo">
         <span>Continue with Google</span>
     </button>
-    <button class="fb">
+    <button class="button">
         <img src="./logo/facebook%20.svg" alt="facebook logo">
         <span>Continue with Facebook</span>
     </button>
